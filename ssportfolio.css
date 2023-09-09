@@ -1,0 +1,464 @@
+
+/* to make page a flexible box */
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    background-color: black;
+} 
+
+
+.dropbtn{
+    color:#bfc0c0;
+    border:none;
+}
+
+.dropd{
+    color:#bfc0c0;
+    position: relative;
+    display: inline-block;
+}
+
+.dcontent{
+    color:#bfc0c0;
+    display: none;
+  position: absolute;
+  min-width:251px;
+
+}
+
+.dcontent a{
+  width: 150px;
+  color:#bfc0c0;
+  padding:3px 11px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropbtn:hover {
+    color:#eef1f3;
+}
+
+.dropd:hover .dcontent{
+    display:block;
+
+}
+
+.dcontent> a:hover{
+    color:#eef1f3;
+}
+.imagebg{
+    background-image: url("./banner.png");
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* for side nav menu*/
+.openbtn{
+    color:#f1f1f1;
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        background: none;
+        border: none;
+        font-size: 34px;
+      
+}
+
+.sidenav{
+    height:100%;
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 70px;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color:rgba(0,0,0,0.5);
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #eef1f3;
+    display: block;
+    transition: 0.3s;
+    background:none;
+
+  }
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #bfc0c0;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 150px;
+    font-size: 36px;
+    margin-right: 50px;
+
+  }
+
+
+  /* for sticky header menu*/
+  .header {
+    background:none;
+    color:#eef1f3;
+  }
+
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:rgba(0,0,0,0.5);
+  }
+  
+  .sticky + .container {
+    padding-top: 102px;
+  }
+ /*flexbox to show my artworks in two columns
+ Create two equal columns that stays next to each other */
+
+ .container{
+    display: flex; /* to make a structure of grids*/
+    flex-wrap:wrap;
+    width:100%; /* This is very important , helps in aliging contents, setting margin and everything! set's the width of the container*/
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+}
+
+
+.items{
+    display:flex;
+    flex-direction: column;
+    flex:100%;
+    margin-top:14px;  /* top right bottom left*/
+
+}
+
+.items img{
+    padding-top:9px;
+    width:100%;
+}
+/*grid ends*/
+
+a.nav:link{
+    color:#bfc0c0;
+    text-decoration: none;
+}
+a.nav:active{
+    color:#eef1f3;
+    text-decoration: none;
+}
+a.nav:visited{
+    color: #bfc0c0;
+    text-decoration: none;
+}
+a.nav:hover{
+    color:#eef1f3;
+    text-decoration: none;
+}
+
+.dropbtn{
+    color:#bfc0c0;
+    border:none;
+}
+
+.dropd{
+    color:#bfc0c0;
+    position: relative;
+    display: inline-block;
+}
+
+.dcontent{
+    color:#bfc0c0;
+    display: none;
+  position: absolute;
+  min-width:251px;
+
+}
+
+.dcontent a{
+  width: 150px;
+  color:#bfc0c0;
+  padding:3px 11px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropbtn:hover {
+    color:#eef1f3;
+}
+
+.dropd:hover .dcontent{
+    display:block;
+
+}
+
+.dcontent> a:hover{
+    color:#eef1f3;
+}
+ /* **TIP** keep a:hover in the end , since visited and link over rides it if placed before them!*/
+/* nav menu ends*/
+
+/*for logo */
+ .icon {
+   top:0;
+   left:0;
+        height:90px;
+        width:180px;
+        background: none;
+ }
+
+.des{
+    display:flex;
+    flex-direction: column;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+color:#0d1321;
+background-color:  #eef1f3;
+padding-right:5px;
+}
+
+.footer a{
+    color:black;
+    text-decoration: none;
+
+}
+.footer,.fchild,ul,li{
+    background-color: #eef1f3;
+}
+.footer{
+    flex-direction: column;
+    padding-top:29px;
+    display:flex;
+    flex:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fchild {
+    padding-top: 21px;
+    list-style-type: none;
+}
+
+ul{
+    font-size: 15px;
+    text-align: center;
+    color:#0d1321;
+    font-weight: bold;
+}
+
+li{
+    font-size: 15px;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*Stylesheet changes for tablet screens*/
+
+@media screen and (min-width:600px){
+
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    .logo{
+        margin-right: auto;
+
+    }
+
+
+    /*flexbox to display header*/
+.flexb{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex:50%;
+    width:100%;
+}
+
+.flexbitem{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex:50%;
+}
+    .container{
+        display: flex;
+        flex:50%;
+        flex-wrap: wrap;
+        padding: 0 66px;
+
+    }
+    .items{
+        display:flex;
+        flex-direction: column;
+        flex:50%;
+        justify-content: center;
+        align-items: center;
+        margin-top:14px;
+        padding: 0 4px;
+    
+    }
+    
+    .items img{
+        width:100%;
+    }
+
+    .des{
+        display:flex;
+        flex-direction: column;
+    padding-top: 10px;
+    text-align: center;
+    color:#0d1321;
+    background-color:  #eef1f3;
+    padding-right:5px;
+    }
+    
+    
+    .footer,.fchild,ul,li{
+        background-color: #eef1f3;
+    }
+    .footer{
+        flex-direction: column;
+        padding-top:29px;
+        display:flex;
+        flex:100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fchild {
+        padding-top: 21px;
+        list-style-type: none;
+    }
+    
+    ul{
+        font-size: 15px;
+        text-align: center;
+        color:#0d1321;
+        font-weight: bold;
+    }
+    
+    li{
+        font-size: 15px;
+    }
+    
+
+    }
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*Stylesheet changes for laptop screens*/
+    
+    @media screen and (min-width:961px){
+    
+
+        *{
+            margin:0;
+            padding:0;
+        }
+
+    /*flexbox to display header*/
+    .flexb{
+        display: flex;
+        flex-wrap:wrap;
+   }
+    
+    .flexbitem{
+        padding-right: 29px;
+        display:flex;
+        align-items: center;
+        flex-direction: row;
+        flex:50%;
+        
+    }
+
+    .logo{
+        padding-left:29px;
+        margin-right: auto;
+
+    }
+
+    .dropd{
+        margin-left:auto;
+    }
+
+        .container{
+            display: flex;
+            flex:50%;
+            flex-wrap: wrap;
+            padding: 0 66px;
+
+        }
+        .items{
+            display:flex;
+            flex-direction: column;
+            flex:50%;
+            justify-content: center;
+            align-items: center;
+            margin-top:150px;
+            padding: 0 4px;
+        
+        }
+        
+        .items img{
+            width:100%;
+        }
+    
+    
+        .des{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: right;
+            color:#0d1321;
+            background-color:  #eef1f3;
+            padding-right:5px;
+            }
+            
+            
+            .footer,.fchild,ul,li{
+                background-color: #eef1f3;
+            }
+            .footer{
+                flex-direction: row;
+                padding-top:29px;
+                display:flex;
+                flex:33.3%;
+
+            }
+            
+            .fchild {
+                align-items: center;
+                display:flex;
+                flex-direction:column;
+                flex:33.3%;
+                padding:0 110;
+                list-style-type: none;
+            }
+            
+            ul{
+                font-size: 15px;
+                text-align: left;
+                color:#0d1321;
+                font-weight: bold;
+            }
+            
+            li{
+                font-size: 15px;
+            }
+            
+    
+        }

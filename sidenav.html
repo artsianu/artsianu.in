@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"> <!-- character set used-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- to scale according to the device-->
+	<title> Anushka Jain | ART & illustration </title>
+    <link rel="icon" type="image/x-icon" href="C:/Users/anush/OneDrive/Documents/html/favicon.ico">
+    <meta http-equiv="refresh" content="10">
+
+    <style>  
+    span{
+        float:right;
+    }   
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          top:0;
+          right: 0;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top:60px;
+        }
+        
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #bfc0c0;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+          color: #eef1f3;
+        }
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 10px;
+          font-size: 36px;
+          margin-right: 30px;
+        }
+        
+
+        </style>
+        </head>
+        <body>
+        
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+            <a href="work.html">Traditional Art</a>
+            <a href="dwork.html" class="digitalw">Digital works</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+        
+        <div id="main">
+          <h2>Sidenav Push Example</h2>
+          <p>Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </p>
+
+        </div>
+        
+        <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.body.style.backgroundColor = "white";
+        }
+        </script>
+           
+        </body>
+        </html> 
+        
+    

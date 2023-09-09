@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"> <!-- character set used-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- to scale according to the device-->
+	<title> Anushka Jain | ART & illustration </title>
+    <link rel="icon" type="image/x-icon" href="C:/Users/anush/OneDrive/Documents/html/favicon.ico">
+    <link rel="stylesheet" href="ssdigital.css">
+</head>
+
+<body>
+<div class="imagebg" id="home">
+        <!-- to make the header the sticky we add a class separately on scroll-->
+   <div class="header" id="stickyhead">
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <!--logo-->
+ <a href="./index.html" target="_self" style="background:none;" > <img src="./logonew.png " class="icon" alt="Anushka Jain"> </a>
+</div>
+<!-- sid nav menu links-->
+    <div id="mysidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">home</a>
+        <a href="./waterg.html">watercolors & gouache</a>
+        <a href="#home">acrylics</a>
+        <a href="./mixed.html">mixed media</a>
+        <a href="./digital.html" class="digitalw">digital illustrations</a>
+        <a href="./about.html">about</a>
+        <a href="#contact">contact</a>
+      </div>
+    </div>
+
+
+<!-- image grid to show my artworks in two columns-->
+<div class="container"> 
+    <div class="items">
+       <img src="acry.jpeg" class="imgs" >
+       <img src="acry2.jpeg" class="imgs">     
+       <img src="./tote.jpeg" class="imgs">
+       <img src="" class="imgs">
+       <img src="" class="imgs">
+    </div> 
+    <div  class="items">
+        <img src="acry3.jpeg" class="imgs">
+        <img src="acry4.jpeg" class="imgs">
+        <img src="./sk16.jpeg" class="imgs">
+        <img src="" class="imgs">
+        <img src="" class="imgs">
+    </div>
+</div>
+<br>
+<br>
+<br>
+<!-- footer for every page is same -->
+<footer class="footer" id="contact">
+    <div class="fchild">
+       <ul>Get in touch</ul>
+       <a href="mailto:artsianu@gmail.com" id="email"> <li>artsianu@gmail.com </li></a>
+    </div>
+
+    <div class="fchild">
+        <ul>Connect</ul>
+        <a href="https://www.youtube.com/channel/UCoPnuA60FUVw_GuVgLLS-YA" target="_blank"><li>Youtube</li></a>
+        <a href="https://in.pinterest.com/artsianu/" target="_blank"><li>Pinterest</li></a>
+        <a href="https://www.linkedin.com/in/anushka-jain-35207a1a5/" target="_blank"><li>LinkedIn</li></a>
+        <a href="https://www.instagram.com/artsianu/" target="_blank"><li>Instagram</li></a>
+     </div>
+
+     <div class="fchild">
+        <ul>Working hours</ul>
+        <li>Monday-Saturday</li>
+        <li> 10 a.m - 7p.m </li>
+     </div> 
+</footer> 
+
+    <div class="des">
+        all artworks are original and copyrighted ©
+        <i class="des">designed by Anushka Jain</i>
+    </div>
+
+
+<!-- script for navigation menu-->
+<script>
+       /* Set the width of the sidebar to 250px (show it) */
+function openNav() {
+  document.getElementById("mysidenav").style.width = "250px";
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+  document.getElementById("mysidenav").style.width = "0";
+}
+/* this function helps the header to become sticky onscroll*/
+    window.onscroll= function() {myscroll()};
+
+    var header=document.getElementById("stickyhead");
+    var sticky=header.offsetTop;
+
+    function myscroll(){
+        if(window.pageYOffset>sticky ){
+            header.classList.add("sticky");
+        }
+
+        else{
+            header.classList.remove("sticky");
+        }
+    }
+    </script>
+
+</body>
+</html>

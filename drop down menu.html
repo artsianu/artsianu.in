@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"> <!-- character set used-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- to scale according to the device-->
+	<title> Anushka Jain | ART & illustration </title>
+    <link rel="icon" type="image/x-icon" href="C:/Users/anush/OneDrive/Documents/html/favicon.ico">
+    <link rel="stylesheet" href="ssportfolio.css">
+</head>
+
+<body>
+<div class="imagebg">
+   <div class="header" id="stickyhead">
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <!--logo-->
+ <a href="work.html" target="_self" style="background:none;"> <img src="./tlogonew.png " class="icon" alt="Anushka Jain"> </a>
+</div>
+    <div id="mysidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index">home</a>
+        <!--drop down menuuuuuuuuuuuuuuuuuuu-->
+        <div class="dropd">
+            <button class="dropbtn">Work&nbsp&nbsp</button>
+            <div class="dcontent">
+            <a href="work.html">Traditional Art</a>
+            <a href="dwork.html" class="digitalw">Digital works</a>
+        </nav>
+        </div> <!--dcontent-->
+        </div> <!--dropd-->
+        <a href="./waterg">watercolors & gouache</a>
+        <a href="./acrylics">acrylics</a>
+        <a href="./mixed">mixed media</a>
+        <a href="./digital" class="digitalw">digital illustrations</a>
+        <a href="./about">about</a>
+        <a href="./about">contact</a>
+      </div>
+    </div>
+
+
+     <!-- image grid to show my artworks in two columns-->  
+<div class="container"> 
+    <div class="items">
+       <img src="C:/Users/anush/OneDrive/Documents/html/artworks/skk1.png" class="imgs" >
+       <img src="C:/Users/anush/OneDrive/Documents/html/artworks/gg2.png" class="imgs">     
+       <img src="C:/Users/anush/OneDrive/Documents/html/artworks/eyemulti.png" class="imgs">
+       <img src="C:/Users/anush/OneDrive/Documents/html/artworks/floral.png" class="imgs">
+       <img src="C:/Users/anush/OneDrive/Documents/html/artworks/durgamaa.png" class="imgs">
+    </div> 
+    <div  class="items">
+        <img src="C:/Users/anush/OneDrive/Documents/html/artworks/nl.png" class="imgs">
+        <img src="C:/Users/anush/OneDrive/Documents/html/artworks/redhand.png" class="imgs">
+        <img src="C:/Users/anush/OneDrive/Documents/html/artworks/illustrationsmp2.png" class="imgs">
+        <img src="C:/Users/anush/OneDrive/Documents/html/artworks/lion.png" class="imgs">
+        <img src="C:/Users/anush/OneDrive/Documents/html/artworks/shiv.png" class="imgs">
+    </div>
+</div>
+<br>
+<br>
+<br>
+<footer class="footer">
+    <div class="fchild">
+       <ul>Get in touch</ul>
+       <a href="mailto:artsianu@gmail.com" id="email"> <li>artsianu@gmail.com </li></a>
+    </div>
+
+    <div class="fchild">
+        <ul>Connect</ul>
+        <a href="https://www.youtube.com/channel/UCoPnuA60FUVw_GuVgLLS-YA" target="_blank"><li>Youtube</li></a>
+        <a href="https://in.pinterest.com/artsianu/" target="_blank"><li>Pinterest</li></a>
+        <a href="https://www.linkedin.com/in/anushka-jain-35207a1a5/" target="_blank"><li>LinkedIn</li></a>
+        <a href="https://www.instagram.com/artsianu/" target="_blank"><li>Instagram</li></a>
+     </div>
+
+     <div class="fchild">
+        <ul>Working hours</ul>
+        <li>Monday-Saturday</li>
+        <li> 10 a.m - 7p.m </li>
+     </div> 
+</footer> 
+
+    <div class="des">
+        all artworks are original and copyrighted ©
+        <i class="des">designed by Anushka Jain</i>
+    </div>
+
+
+<!-- script for navigation menu-->
+<script>
+       /* Set the width of the sidebar to 250px (show it) */
+function openNav() {
+  document.getElementById("mysidenav").style.width = "250px";
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+  document.getElementById("mysidenav").style.width = "0";
+}
+
+    window.onscroll= function() {myscroll()};
+
+    var header=document.getElementById("stickyhead");
+    var sticky=header.offsetTop;
+
+    function myscroll(){
+        if(window.pageYOffset>sticky ){
+            header.classList.add("sticky");
+        }
+
+        else{
+            header.classList.remove("sticky");
+        }
+    }
+    </script>
+
+</body>
+</html>

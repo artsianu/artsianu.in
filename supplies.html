@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"> <!-- character set used-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- to scale according to the device-->
+	<title> Anushka Jain | ART & illustration </title>
+    <link rel="icon" type="image/x-icon" href="C:/Users/anush/OneDrive/Documents/html/favicon.ico">
+    <link rel="stylesheet" href="sssupplies.css">
+</head>
+
+<body>
+<div class="imagebg" id="home">
+   <div class="header" id="stickyhead">
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <!--logo-->
+ <a href="./index.html" target="_self" style="background:none;"> <img src="./logonew.png " class="icon" alt="Anushka Jain"> </a>
+</div>
+    <div id="mysidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#home">home</a>
+        <a href="./waterg.html">watercolors & gouache</a>
+        <a href="./acrylics.html">acrylics</a>
+        <a href="./mixed.html">mixed media</a>
+        <a href="./digital.html" class="digitalw">digital illustrations</a>
+        <a href="./about.html">about</a>
+        <a href="#contact">contact</a>
+      </div>
+    </div>
+
+<div class="links">
+    <ul>Supplies I use</ul>
+<li><a target="_blank" href="https://i.refs.cc/AOLXYo8t?smile_ref=eyJzbWlsZV9zb3VyY2UiOiJzbWlsZV91aSIsInNtaWxlX21lZGl1bSI6IiIsInNtaWxlX2NhbXBhaWduIjoicmVmZXJyYWxfcHJvZ3JhbSIsInNtaWxlX2N1c3RvbWVyX2lkIjoxMzc3NzE1MzIzfQ%3D%3D" class="links">Get a discount coupon of INR100 on Zensangam journals</a></li>
+<li><a target="_blank" href="https://amzn.to/3q7I2ld" class="links">A6 sketchbook 120gsm</a></li>
+<li><a target="_blank" href="https://amzn.to/3DBtdKM" class="links">Sqaure sketchbook 160gsm</a></li>
+<li><a target="_blank" href=https://amzn.to/3DxHeJp" class="links">Factor notes sketchpad A6 30%cotton 300gsm</a></li>
+<li><a target="_blank" href="https://amzn.to/3QlidJ9" class="links">Watercolor sheets A6 30%cotton 300gsm </a></li>
+<li><a target="_blank" href="https://amzn.to/43OcjUb" class="links">Fine art brush set</a></li>
+<li><a target="_blank" href="https://amzn.to/452XQoc" class="links">Camlin brush set</a></li>
+<li><a target="_blank" href="https://amzn.to/3QhUtpq" class="links">Camlin brush pens sketchbook</a></li>
+<li><a target="_blank" href="https://amzn.to/3YeX59s" class="links">Fevicryl acrylics</a></li>
+<li><a target="_blank" href="https://amzn.to/43GKwos" class="links">Camel watercolors set of 24</a></li>
+<li><a target="_blank" href="https://amzn.to/3KhCL1r" class="links">Camel acrylics</a></li>
+<li><a target="_blank" href="https://amzn.to/455cz21" class="links">HIMI miya gouache</a></li>
+<li><a target="_blank" href="https://amzn.to/44QH3Fd" class="links">Micron fineliners</a></li>
+</div>
+
+<br>
+<br>
+<br>
+<footer class="footer" id="contact">
+    <div class="fchild">
+       <ul>Get in touch</ul>
+       <a href="mailto:artsianu@gmail.com" id="email" class="flink"> <li>artsianu@gmail.com </li></a>
+    </div>
+
+    <div class="fchild">
+        <ul>Connect</ul>
+        <a href="https://www.youtube.com/channel/UCoPnuA60FUVw_GuVgLLS-YA" target="_blank" class="flink"><li>Youtube</li></a>
+        <a href="https://in.pinterest.com/artsianu/" target="_blank" class="flink"><li>Pinterest</li></a>
+        <a href="https://www.linkedin.com/in/anushka-jain-35207a1a5/" target="_blank" class="flink"><li>LinkedIn</li></a>
+        <a href="https://www.instagram.com/artsianu/" target="_blank" class="flink"><li>Instagram</li></a>
+     </div>
+
+     <div class="fchild">
+        <ul>Working hours</ul>
+        <li>Monday-Saturday</li>
+        <li> 10 a.m - 7p.m </li>
+     </div> 
+</footer> 
+
+    <div class="des">
+        all artworks are original and copywrighted ©
+        <i class="des">designed by Anushka Jain</i>
+    </div>
+<!-- script for navigation menu-->
+<script>
+    /* Set the width of the sidebar to 250px (show it) */
+function openNav() {
+document.getElementById("mysidenav").style.width = "250px";
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+document.getElementById("mysidenav").style.width = "0";
+}
+
+ window.onscroll= function() {myscroll()};
+
+ var header=document.getElementById("stickyhead");
+ var sticky=header.offsetTop;
+
+ function myscroll(){
+     if(window.pageYOffset>sticky ){
+         header.classList.add("sticky");
+     }
+
+     else{
+         header.classList.remove("sticky");
+     }
+ }
+ </script>
+
+</body>
+</html>

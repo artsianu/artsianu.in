@@ -1,0 +1,359 @@
+/* to make page a flexible box */
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    background-color: black;
+    scroll-behavior: smooth;
+  } 
+  
+  
+  .imagebg{
+    background-image: url("./backg.png");
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* for side nav menu*/
+  .openbtn{
+    color:#f1f1f1;
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        background: none;
+        border: none;
+        font-size: 34px;
+  }
+  
+  .sidenav{
+    height:100%;
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 70px;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color:rgba(0,0,0,0.5);
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #eef1f3;
+    display: block;
+    transition: 0.3s;
+    background:none; 
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #bfc0c0;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 150px;
+    font-size: 36px;
+    margin-right: 50px; 
+  }
+  
+  /* for sticky header menu*/
+  .header {
+    background:none;
+    color:#eef1f3;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:rgba(0,0,0,0.5);
+    transition: background 0.3s;
+  }
+  
+  .sticky + .container {
+    padding-top: 102px;
+  }
+
+div.links{
+    margin-top:9px;
+    color:#bfc0c0;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: none;
+    background: none;
+    text-align: center;
+    padding:2px;
+}
+.links ul{
+    margin-top: 9px;
+    color:black;
+    list-style-type: none;
+    background-color: white;
+    text-align: center;
+    padding:4px;
+}
+
+.links li{
+    margin-top: 9px;
+    color:#bfc0c0;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: none;
+    background: none;
+    text-align: center;
+    padding:4px;
+}
+
+a.nav:link{
+    color:#bfc0c0;
+    text-decoration: none;
+}
+a.nav:active{
+    color:#eef1f3;
+    text-decoration: none;
+}
+a.nav:visited{
+    color: #bfc0c0;
+    text-decoration: none;
+}
+a.nav:hover{
+    color:#eef1f3;
+    text-decoration: none;
+}
+
+ /* **TIP** keep a:hover in the end , since visited and link over rides it if placed before them!*/
+/* nav menu ends*/
+
+/*for logo */
+  .icon {
+    top:0;
+    left:0;
+         height:90px;
+         width:180px;
+         background: none;
+   }
+
+/*additional links*/
+ .links div {
+    color:#bfc0c0;
+    text-decoration: none;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+a.links{
+    margin-left:auto;
+    margin-right: auto;
+    }
+
+a.links:link{
+    color:#bfc0c0;
+    text-decoration: none;
+   
+}
+
+a.links:active{
+    color:#eef1f3;
+    text-decoration: none;
+
+}
+a.links:visited{
+    color:#bfc0c0;
+    text-decoration: none;
+
+}
+a.links:hover{
+    color:#eef1f3;
+    text-decoration: none;
+
+}
+
+.des{
+    display:flex;
+    flex-direction: column;
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+color:#0d1321;
+background-color:  #eef1f3;
+padding-right:5px;
+}
+
+.footer a{
+    color:black;
+    text-decoration: none;
+
+}
+.footer,.fchild,ul,li{
+    background-color: #eef1f3;
+}
+.footer{
+    flex-direction: column;
+    padding-top:29px;
+    display:flex;
+    flex:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fchild {
+    padding-top: 21px;
+    list-style-type: none;
+}
+
+ul{
+    font-size: 15px;
+    text-align: center;
+    color:#0d1321;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+li{
+    font-size: 15px;
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*Stylesheet changes for tablet screens*/
+
+@media screen and (min-width:600px){
+
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    .des{
+        display:flex;
+        flex-direction: column;
+    padding-top: 10px;
+    text-align: center;
+    color:#0d1321;
+    background-color:  #eef1f3;
+    padding-right:5px;
+    }
+    
+    
+    .footer,.fchild,ul,li{
+        background-color: #eef1f3;
+    }
+    .footer{
+        flex-direction: column;
+        padding-top:29px;
+        display:flex;
+        flex:100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fchild {
+        padding-top: 21px;
+        list-style-type: none;
+    }
+    
+    ul{
+        font-size: 15px;
+        text-align: center;
+        color:#0d1321;
+        font-weight: bold;
+    }
+    
+    li{
+        font-size: 15px;
+    }
+}
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*Stylesheet changes for laptop screens*/
+    
+    @media screen and (min-width:961px){
+    
+
+        *{
+            margin:0;
+            padding:0;
+        }
+    .logo{
+        padding-left:29px;
+        margin-right: auto;
+    }
+
+    .dropd{
+        margin-left:auto;
+    }
+
+        .container{
+            display: flex;
+            flex:25%;
+            flex-wrap: wrap;
+            padding: 0 66px;
+        }
+        .items{
+            display:flex;
+            flex-direction: column;
+            flex:25%;
+            justify-content: center;
+            align-items: center;
+            margin-top:100px;
+            padding: 0 4px;       
+        }
+        
+        .items img{
+            width:100%;
+        }
+    
+    
+        .des{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: right;
+            color:#0d1321;
+            background-color:  #eef1f3;
+            padding-right:5px;
+            }
+            
+            
+            .footer,.fchild,ul,li{
+                background-color: #eef1f3;
+            }
+
+            .footer{
+                flex-direction: row;
+                padding-top:29px;
+                display:flex;
+                flex:33.3%;
+            }
+            
+            .fchild {
+                align-items: center;
+                display:flex;
+                flex-direction:column;
+                flex:33.3%;
+                padding:0 110;
+                list-style-type: none;
+            }
+            
+            ul{
+                font-size: 15px;
+                text-align: left;
+                color:#0d1321;
+                font-weight: bold;
+            }
+            
+            li{
+                font-size: 15px;
+            }
+            
+    
+        }
