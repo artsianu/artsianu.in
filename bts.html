@@ -7,94 +7,116 @@
     <link rel="icon" type="image/x-icon" href="C:/Users/anush/OneDrive/Documents/html/favicon.ico">
     <link rel="stylesheet" href="ssbts.css">
 </head>
+
 <body>
-
-
-<div class="flexb">
-    <div class="flexbitem">
-    <!--logo-->
-<a href="work.html" target="_self" class="logo"> <img src="C:/Users/anush/OneDrive/Documents/html/artworks/icon5.png " class="icon" alt="Anushka Jain"> </a>
-</div> <!--flexbitem-->
-
-<div class="flexbitem">
-<!-- Navaigation menu Links to about me, home page and shop-->
-    <div class="dropd">
-    <button class="dropbtn">Work&nbsp&nbsp</button>
-    <div class="dcontent">
-    <a href="work.html">Traditional Art</a>
-    <a href="dwork.html" class="digitalw">Digital works</a>
-</nav>
-</div> <!--dcontent-->
-</div> <!--dropd-->
-
-	<a href="https://artsianu.mini.store" target="_blank" class="nav">shop&nbsp&nbsp</a>
-	<a href="aboutme.html" target="_self" class="nav">about me</a>
-
-</div> <!-- flexbitem-->
-</div> <!--flexb-->
+<div class="imagebg" id="home">
+        <!-- to make the header the sticky we add a class separately on scroll-->
+   <div class="header" id="stickyhead">
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <!--logo-->
+ <a href="./index.html" target="_self" style="background:none;" > <img src="./logonew.png " class="icon" alt="Anushka Jain"> </a>
+</div>
+<!-- sid nav menu links-->
+    <div id="mysidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">home</a>
+        <a href="https://artsianu.mini.store/?path=%2F">shop</a>
+        <a href="./waterg.html">watercolors & gouache</a>
+        <a href="./acrylics.html">acrylics</a>
+        <a href="./mixed.html">mixed media</a>
+        <a href="./digital.html" class="digitalw">digital illustrations</a>
+        <a href="#home">about</a>
+        <a href="#contact">contact</a>
+      </div>
+    </div>
 
 <!-- image grid to show my artworks in two columns-->
 <div class="container"> 
     <div class="items">
-       <img src="C:/Users/anush/OneDrive/Documents/html/artworks/sk1.jpeg" class="imgs" >
-       <img src="C:/Users/anush/OneDrive/Documents/html/artworks/sk2.jpeg" class="imgs">     
-       <img src="C:/Users/anush/OneDrive/Documents/html/artworks/sk5.jpeg" class="imgs">
+       <img src="./sk1.jpeg" class="imgs" >
+       <img src="./sk2.jpeg" class="imgs">     
+       <img src="./sk5.jpeg" class="imgs">
     </div>
        <div class="items">
-       <img src="C:/Users/anush/OneDrive/Documents/html/artworks/sk7.jpeg" class="imgs">
-       <img src="C:/Users/anush/OneDrive/Documents/html/artworks/sk9.jpeg" class="imgs">
-       <img src="C:/Users/anush/OneDrive/Documents/html/artworks/sk16.jpeg" class="imgs">
+       <img src="./sk7.jpeg" class="imgs">
+       <img src="./sk9.jpeg" class="imgs">
+       <img src="./sk16.jpeg" class="imgs">
     </div> 
     <div  class="items">
-        <img src="C:/Users/anush/OneDrive/Documents/html/artworks/sk3.jpeg" class="imgs">
-        <img src="C:/Users/anush/OneDrive/Documents/html/artworks/sk4.jpeg" class="imgs">
-        <img src="C:/Users/anush/OneDrive/Documents/html/artworks/sk12.jpeg" class="imgs">
+        <img src="./sk3.jpeg" class="imgs">
+        <img src="./sk4.jpeg" class="imgs">
+        <img src="./sk12.jpeg" class="imgs">
     </div>
     <div  class="items">
-        <img src="C:/Users/anush/OneDrive/Documents/html/artworks/sk8.jpeg" class="imgs">
-        <img src="C:/Users/anush/OneDrive/Documents/html/artworks/sk10.jpeg" class="imgs">
-        <img src="C:/Users/anush/OneDrive/Documents/html/artworks/sk6.jpeg" class="imgs">
+        <img src="./sk8.jpeg" class="imgs">
+        <img src="./sk10.jpeg" class="imgs">
+        <img src="./sk6.jpeg" class="imgs">
         
     </div><!--items-->
-   
+<!--   
 <div class="addlinks">
     <a href="./addlinks" target=""_blank"  class="addlinks"> Additional Links</a>
-</div>
+</div>-->
 
-</div> <!--contianer-->
-<br>
+</div> <!--container-->
 
+        <br>
+        <br>
+        <br>
+        <!-- footer for every page is same -->
+        <footer class="footer" id="contact">
+            <div class="fchild">
+               <ul>Get in touch</ul>
+               <a href="mailto:artsianu@gmail.com" id="email"> <li>artsianu@gmail.com </li></a>
+            </div>
+        
+            <div class="fchild">
+                <ul>Connect</ul>
+                <a href="https://www.youtube.com/channel/UCoPnuA60FUVw_GuVgLLS-YA" target="_blank"><li>Youtube</li></a>
+                <a href="https://www.behance.net/anushkajain1407" target="_blank"><li>Behance</li></a>
+                <a href="https://www.instagram.com/artsianu/" target="_blank"><li>Instagram</li></a>
+                <a href="https://in.pinterest.com/artsianu/" target="_blank"><li>Pinterest</li></a>
+                <a href="https://www.linkedin.com/in/anushka-jain-35207a1a5/" target="_blank"><li>LinkedIn</li></a>
+             </div>
+        
+             <div class="fchild">
+                <ul>Working hours</ul>
+        <li>Monday-Friday</li>
+        <li> 11 a.m - 7 p.m </li>
+             </div> 
+        </footer> 
 
+            <div class="des">
+                all artworks are original and copyrighted ©
+                <i class="des">designed by Anushka Jain</i>
+            </div>
+        
+<!-- script for navigation menu-->
+<script>
+    /* Set the width of the sidebar to 250px (show it) */
+function openNav() {
+document.getElementById("mysidenav").style.width = "250px";
+}
 
-<br>
-<br>
-<br>
-<footer class="footer">
-    <div class="fchild">
-       <ul>Get in touch</ul>
-       <a href="mailto:artsianu@gmail.com" id="email" class="flink"> <li>artsianu@gmail.com </li></a>
-    </div>
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+document.getElementById("mysidenav").style.width = "0";
+}
+/* this function helps the header to become sticky onscroll*/
+ window.onscroll= function() {myscroll()};
 
-    <div class="fchild">
-        <ul>Connect</ul>
-        <a href="https://www.youtube.com/channel/UCoPnuA60FUVw_GuVgLLS-YA" target="_blank" class="flink"><li>Youtube</li></a>
-        <a href="https://in.pinterest.com/artsianu/" target="_blank" class="flink"><li>Pinterest</li></a>
-        <a href="https://www.linkedin.com/in/anushka-jain-35207a1a5/" target="_blank" class="flink"><li>LinkedIn</li></a>
-        <a href="https://www.instagram.com/artsianu/" target="_blank" class="flink"><li>Instagram</li></a>
-     </div>
+ var header=document.getElementById("stickyhead");
+ var sticky=header.offsetTop;
 
-     <div class="fchild">
-        <ul>Working hours</ul>
-        <li>Monday-Saturday</li>
-        <li> 10 a.m - 7p.m </li>
-     </div> 
-</footer> 
+ function myscroll(){
+     if(window.pageYOffset>sticky ){
+         header.classList.add("sticky");
+     }
 
-    <div class="des">
-        all artworks are original and copywrighted ©
-        <i class="des">designed by Anushka Jain</i>
-    </div>
-
-
+     else{
+         header.classList.remove("sticky");
+     }
+ }
+ </script>
 </body>
 </html>
