@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
   } 
   
-  
+  /*
   .imagebg{
     background-image: url("./banner.png");
     height: 650px;
@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
+  }*/
   
   /* for side nav menu*/
   .openbtn{
