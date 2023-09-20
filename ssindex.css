@@ -10,7 +10,7 @@
 
 .imagebg{
   background-image: url("./bckg.jpeg");
-  height: 650px;
+  height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -276,7 +276,16 @@ li{
           margin:0;
           padding:0;
       }
-
+    
+.imagebg{
+  background-image: url("./bckg.jpeg");
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+    
   .logo{
       padding-left:29px;
       margin-right: auto;
