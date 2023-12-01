@@ -17,7 +17,14 @@
     background-size: cover;
     position: relative;
   }*/
-  
+
+  h1{
+    padding-left:14px;
+    text-align: center;
+    color:#ffcc00;
+    font-size: 72px;
+  }
+
   /* for side nav menu*/
   .openbtn{
     color:#f1f1f1;
@@ -198,7 +205,14 @@
         margin:0;
         padding:0;
     }
-  
+      
+      h1{
+      padding-left:14px;
+      text-align: left;
+      color:#ffcc00;
+      font-size: 72px;
+    }
+      
     .logo{
         margin-right: auto;
   
@@ -276,7 +290,14 @@
             margin:0;
             padding:0;
         }
- 
+
+        h1{
+          padding-left:14px;
+          text-align: left;
+          color:#ffcc00;
+          font-size: 72px;
+        }
+        
     .logo{
         padding-left:29px;
         margin-right: auto;
